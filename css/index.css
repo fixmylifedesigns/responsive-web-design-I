@@ -73,12 +73,26 @@ h1, h2, h3, h4, h5 {
 	/* TB LR */
 	margin: 0 auto;
   }
-  
+	
+	@media( max-width: 1024px ) {
+		.container {
+			width: 760px;
+		}
+	}
+
   /* header */
   
   header {
 	  display: flex;
-  }
+	}
+	
+	@media( max-width: 1024px ) {
+		header {
+			flex-wrap: wrap;
+			flex-direction: column-reverse;
+			align-items: center;
+		}
+	}
 
   header nav {
 
@@ -86,7 +100,13 @@ h1, h2, h3, h4, h5 {
 	vertical-align: top;
 	margin-top: 35px;
   }
-  
+	
+	@media( max-width: 1024px ) {
+		header nav{
+			width: 740px;
+		}
+	}
+
   header nav a {
 
 	margin-right: 65px;
@@ -94,7 +114,14 @@ h1, h2, h3, h4, h5 {
 	color: gray;
 	text-decoration: none;
   }
-  
+	
+	@media( max-width: 1024px ) {
+		header nav a{
+			margin-right: 78px;
+			font-size: 16px;
+		}
+	}
+
   header nav a:hover {
 	text-decoration: underline;
   }
@@ -111,12 +138,28 @@ h1, h2, h3, h4, h5 {
 
 	margin-top: 25px;
   }
-  
+	
+	@media( max-width: 1024px ) {
+		header .logo{
+			flex-wrap: wrap;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
   /* cta */
   
   .cta {
 	display: flex;
   }
+
+	@media( max-width: 1024px ) {
+		.cta {
+			flex-wrap: wrap;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
 
   .cta .cta-text {
 
@@ -125,7 +168,14 @@ h1, h2, h3, h4, h5 {
 	margin-top: 120px;
 	text-align: center;
 	padding: 0px 75px;
-  }
+	}
+	
+	@media( max-width: 1024px ) {
+		.cta .cta-text {
+			margin-top: 75px;
+			font-size: 72px;
+		}
+	}
   
  button {
 	background: white;
@@ -136,7 +186,19 @@ h1, h2, h3, h4, h5 {
 	border: 1px solid black;
 	cursor: pointer;
   }
-  
+	
+	@media( max-width: 1024px ) {
+		button {
+			background: white;
+			vertical-align: top;
+			margin-top: 9px;
+			padding: 6px 40px;
+			font-size: 17px;
+			border: 1px solid black;
+			cursor: pointer;
+		}
+	}
+
   .cta .cta-text button:hover {
 	background: black;
 	color: white;
@@ -145,14 +207,28 @@ h1, h2, h3, h4, h5 {
   .cta img {
 	display: inline-block;
 	margin-top: 69px;
-  }
+	}
+	
+	@media( max-width: 1024px ) {
+		.cta img {
+			display: none;
+		}
+	}
   
   .main-content {
 	border-top: 1px solid black;
 	margin-top: 76px;
 	padding-top: 39px;
   }
-  
+	
+	@media( max-width: 1024px ) {
+		.main-content {
+			border-top: 1px solid black;
+			margin-top: 45px;
+			padding-top: 37px;
+		}
+	}
+
   .top-content{
 	  display: flex;
   }
@@ -163,10 +239,17 @@ h1, h2, h3, h4, h5 {
   
   .main-content .top-content .text-content {
 	width: 410px;
-
 	margin-right: 34px;
   }
-  
+	
+	@media( max-width: 1024px ) {
+		.main-content .top-content .text-content {
+			width: 490px;
+			line-height:18px;
+			margin-right: 20px;
+		}
+	}
+
   .main-content .top-content .text-content:last-child {
 	margin-right: 0;
   }
@@ -174,7 +257,15 @@ h1, h2, h3, h4, h5 {
   .main-content .middle-img {
 	margin-top: 45px;
   }
-  
+	
+	@media( max-width: 1024px ) {
+		.main-content .middle-img {
+			width: 100%;
+			height: 157px;
+			margin-top: 30px;
+		}
+	}
+
 .bottom-content{
 	display: flex;
 }
@@ -183,12 +274,23 @@ h1, h2, h3, h4, h5 {
 	margin-top: 37px;
 	padding: 0 10px;
   }
-  
+	
+	
   .main-content .bottom-content .text-content {
 	width: 275px;
 	margin-right: 12px;
   }
-  
+	
+	@media( max-width: 1024px ) {
+		.main-content .bottom-content .text-content {
+			margin-top: -10px;
+			line-height:18px;
+			width: 215px;
+			margin-right: 38px;
+			font-size: px ;
+		}
+	}
+
   .main-content .bottom-content .text-content:last-child {
 	margin-right: 0;
   }
@@ -198,16 +300,36 @@ h1, h2, h3, h4, h5 {
 	border-top: 1px solid black;
 	padding: 39px 10px 0;
   }
-  
+	
+	@media( max-width: 1024px ) {
+		.contact {
+			margin-top: 36px;
+			padding: 37px 10px 0;
+		}
+	}
+
   .contact p {
-	margin: 20px 0;
+		margin: 20px 0;
   }
-  
+	
+	@media( max-width: 1024px ) {
+		.contact p{
+			margin: 10px 0 15px;
+		}
+	}
+
   footer {
 	margin: 32px 0;
 	text-align: center;
 	font-size: 14px;
   }
+
+	@media( max-width: 1024px ) {
+		footer p{
+			padding-top: 8px;
+			font-size:16px;
+		}
+	}
 
   /* new stuff */
 
@@ -219,7 +341,7 @@ h1, h2, h3, h4, h5 {
 	margin-top: 25px
 }
 
-  button {
+  /* button {
 	background: white;
 	vertical-align: top;
 	margin-top: 25px;
@@ -233,7 +355,7 @@ h1, h2, h3, h4, h5 {
  button:hover {
 	background: black;
 	color: white;
-  }
+  } */
 
 .upper-content{
 	border-bottom: 1px solid black;
