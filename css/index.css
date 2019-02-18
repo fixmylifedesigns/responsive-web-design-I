@@ -74,9 +74,15 @@ h1, h2, h3, h4, h5 {
 	margin: 0 auto;
   }
 	
-	@media( max-width: 1024px ) {
+	@media( max-width: 800px ) {
 		.container {
 			width: 760px;
+		}
+	}
+
+	@media( max-width: 500px ) {
+		.container {
+			width: 460px;
 		}
 	}
 
@@ -86,7 +92,7 @@ h1, h2, h3, h4, h5 {
 	  display: flex;
 	}
 	
-	@media( max-width: 1024px ) {
+	@media( max-width: 800px ) {
 		header {
 			flex-wrap: wrap;
 			flex-direction: column-reverse;
@@ -101,9 +107,17 @@ h1, h2, h3, h4, h5 {
 	margin-top: 35px;
   }
 	
-	@media( max-width: 1024px ) {
+	@media( max-width: 800px ) {
 		header nav{
 			width: 740px;
+		}
+	}
+
+	@media( max-width: 500px ) {
+		header nav{
+			display: flex;
+			flex-direction: column;
+			width: 500px;
 		}
 	}
 
@@ -115,12 +129,27 @@ h1, h2, h3, h4, h5 {
 	text-decoration: none;
   }
 	
-	@media( max-width: 1024px ) {
+	@media( max-width: 800px ) {
 		header nav a{
 			margin-right: 78px;
 			font-size: 16px;
 		}
 	}
+
+	@media( max-width: 500px ) {
+		header nav a{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 100%;
+			text-align: center;
+			padding: 19.5px;
+			background: white;
+			font-size: 20px;
+			border: 1px solid black;
+		}
+	}
+
 
   header nav a:hover {
 	text-decoration: underline;
@@ -139,8 +168,18 @@ h1, h2, h3, h4, h5 {
 	margin-top: 25px;
   }
 	
-	@media( max-width: 1024px ) {
+	@media( max-width: 800px ) {
 		header .logo{
+			flex-wrap: wrap;
+			flex-direction: column;
+			align-items: center;
+			margin-bottom: -16px;
+		}
+	}
+
+	@media( max-width: 500px ) {
+		header .logo{
+			display:flex;
 			flex-wrap: wrap;
 			flex-direction: column;
 			align-items: center;
@@ -153,7 +192,7 @@ h1, h2, h3, h4, h5 {
 	display: flex;
   }
 
-	@media( max-width: 1024px ) {
+	@media( max-width: 800px ) {
 		.cta {
 			flex-wrap: wrap;
 			flex-direction: column;
@@ -170,13 +209,20 @@ h1, h2, h3, h4, h5 {
 	padding: 0px 75px;
 	}
 	
-	@media( max-width: 1024px ) {
+	@media( max-width: 800px ) {
 		.cta .cta-text {
 			margin-top: 75px;
 			font-size: 72px;
 		}
 	}
-  
+	
+	@media( max-width: 500px ) {
+		.cta .cta-text {
+			margin-top: 50px;
+			font-size: 72px;
+		}
+	}
+
  button {
 	background: white;
 	vertical-align: top;
@@ -187,7 +233,7 @@ h1, h2, h3, h4, h5 {
 	cursor: pointer;
   }
 	
-	@media( max-width: 1024px ) {
+	@media( max-width: 800px ) {
 		button {
 			background: white;
 			vertical-align: top;
@@ -199,6 +245,8 @@ h1, h2, h3, h4, h5 {
 		}
 	}
 
+	
+
   .cta .cta-text button:hover {
 	background: black;
 	color: white;
@@ -209,7 +257,7 @@ h1, h2, h3, h4, h5 {
 	margin-top: 69px;
 	}
 	
-	@media( max-width: 1024px ) {
+	@media( max-width: 800px ) {
 		.cta img {
 			display: none;
 		}
@@ -221,8 +269,17 @@ h1, h2, h3, h4, h5 {
 	padding-top: 39px;
   }
 	
-	@media( max-width: 1024px ) {
+	@media( max-width: 800px ) {
 		.main-content {
+			border-top: 1px solid black;
+			margin-top: 45px;
+			padding-top: 37px;
+		}
+	}
+
+	@media( max-width: 500px ) {
+		.main-content {
+
 			border-top: 1px solid black;
 			margin-top: 45px;
 			padding-top: 37px;
@@ -235,21 +292,44 @@ h1, h2, h3, h4, h5 {
 
   .main-content .top-content {
 	padding: 0 10px;
-  }
-  
+	}
+	
+  	@media( max-width: 500px ) {
+		.main-content .top-content {
+			display: flex;
+			flex-direction: column; 	
+			width: 100%;
+			
+		}
+	}
+
   .main-content .top-content .text-content {
 	width: 410px;
 	margin-right: 34px;
   }
 	
-	@media( max-width: 1024px ) {
+	@media( max-width: 800px ) {
 		.main-content .top-content .text-content {
-			width: 490px;
+			
+			width: 100%;
 			line-height:18px;
 			margin-right: 20px;
 		}
 	}
 
+	@media( max-width: 500px ) {
+		.main-content .top-content .text-content {
+			margin-top: 24px ;
+			width: 400px;
+			line-height:18px;
+			margin-bottom: 20px;
+			margin-right: 15px;
+
+		}
+	}
+
+
+	margin-bottom:25px;
   .main-content .top-content .text-content:last-child {
 	margin-right: 0;
   }
@@ -258,11 +338,21 @@ h1, h2, h3, h4, h5 {
 	margin-top: 45px;
   }
 	
-	@media( max-width: 1024px ) {
+	@media( max-width: 800px ) {
 		.main-content .middle-img {
 			width: 100%;
 			height: 157px;
 			margin-top: 30px;
+			
+		}
+	}
+
+	@media( max-width: 500px ) {
+		.main-content .middle-img {
+			width: 100%;
+			height: 100px;
+			margin-top: 30px;
+			
 		}
 	}
 
@@ -275,6 +365,13 @@ h1, h2, h3, h4, h5 {
 	padding: 0 10px;
   }
 	
+	@media( max-width: 500px ) {
+		.main-content .bottom-content {
+			display: flex;
+			flex-direction: column; 	
+			
+		}
+	}
 	
   .main-content .bottom-content .text-content {
 	width: 275px;
@@ -287,7 +384,18 @@ h1, h2, h3, h4, h5 {
 			line-height:18px;
 			width: 215px;
 			margin-right: 38px;
-			font-size: px ;
+		
+
+		}
+	}
+
+	@media( max-width: 500px ) {
+		.main-content .bottom-content .text-content {
+			margin-top: -10px;
+			line-height:18px;
+			width: 100%;
+			margin-bottom:72px;
+	
 		}
 	}
 
@@ -308,11 +416,18 @@ h1, h2, h3, h4, h5 {
 		}
 	}
 
+	@media( max-width: 500px ) {
+		.contact {
+			margin-top: -36px;
+			padding: 37px 10px 0;
+		}
+	}
+
   .contact p {
 		margin: 20px 0;
   }
 	
-	@media( max-width: 1024px ) {
+	@media( max-width: 800px ) {
 		.contact p{
 			margin: 10px 0 15px;
 		}
@@ -324,14 +439,22 @@ h1, h2, h3, h4, h5 {
 	font-size: 14px;
   }
 
-	@media( max-width: 1024px ) {
+	@media( max-width: 800px ) {
 		footer p{
 			padding-top: 8px;
 			font-size:16px;
 		}
 	}
 
-  /* new stuff */
+	@media( max-width: 500px ) {
+		footer {
+			padding-top: 8px;
+			font-size:16px;
+			margin-bottom:10;
+		}
+	}
+
+  /* service page  */
 
 .gis{
 	font-size:25px ;
@@ -341,21 +464,13 @@ h1, h2, h3, h4, h5 {
 	margin-top: 25px
 }
 
-  /* button {
-	background: white;
-	vertical-align: top;
-	margin-top: 25px;
-	padding: 8px 40px;
-	font-size: 14px;
-	border: 1px solid black;
-	cursor: pointer;
-	border-radius: 10px;
-  }
-  
- button:hover {
-	background: black;
-	color: white;
-  } */
+@media( max-width: 800px ) {
+	.services-header-img {
+		width: 100%;
+		height: 157px;
+		margin-top: 30px;
+	}
+}
 
 .upper-content{
 	border-bottom: 1px solid black;
@@ -369,15 +484,23 @@ h1, h2, h3, h4, h5 {
 
 }
 	
-    .service-text{
+  .service-text{
 		padding: 10px;
 		height: 200px;
 		width:  420px;
 		background: rgb(236, 236, 234);
 		border:1px solid black;
 		margin-bottom: 25px
-		
-	
+	}
+@media( max-width: 800px ) {
+	.service-text {
+		padding: 10px;
+		height: 210px;
+		width:  360px;
+		background: rgb(236, 236, 234);
+		border:1px solid black;
+		margin-bottom: 25px
+	}
 }
 
 	.funfacts{
