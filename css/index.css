@@ -472,6 +472,14 @@ h1, h2, h3, h4, h5 {
 	}
 }
 
+@media( max-width: 500px ) {
+	.services-header-img {
+		width: 100%;
+		height: auto;
+		margin-top: 30px;
+	}
+}
+
 .upper-content{
 	border-bottom: 1px solid black;
 	margin: 25px 0 ;
@@ -503,6 +511,20 @@ h1, h2, h3, h4, h5 {
 	}
 }
 
+@media( max-width: 500px ) {
+	.service-text {
+		display: flex;
+		flex-direction: column;
+		padding: 10px;
+		height: 300px;
+		width:  100%;
+		background: rgb(236, 236, 234);
+		border:1px solid black;
+		margin-bottom: 40px
+	}
+}
+
+
 	.funfacts{
 		margin: 25px 0;
 		padding-top: 25px;
@@ -510,8 +532,22 @@ h1, h2, h3, h4, h5 {
 		display: flex;
 }
 
+@media( max-width: 500px ) {
+	.funfacts {
+		display: flex;
+		flex-direction: column-reverse;
+		margin-bottom: 25px;
+}
+
 	.fun-p{
 		margin-right:50px;
+	}
+
+	@media( max-width: 500px ) {
+		.list{
+			display: flex;
+			flex-direction: column;
+			margin-top: 25px;
 	}
 
 ul {
