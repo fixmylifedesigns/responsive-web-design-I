@@ -89,7 +89,8 @@ h1, h2, h3, h4, h5 {
   /* header */
   
   header {
-	  display: flex;
+		display: flex;
+		width: 100%;
 	}
 	
 	@media( max-width: 800px ) {
@@ -102,9 +103,9 @@ h1, h2, h3, h4, h5 {
 	}
 
   header nav {
-	width: 691px;
-	vertical-align: top;
-	margin-top: 35px;
+		width: 100%;
+		vertical-align: top;
+		margin-top: 35px;
   }
 	
 	@media( max-width: 800px ) {
@@ -133,6 +134,7 @@ h1, h2, h3, h4, h5 {
 	font-size: 14px;
 	color: gray;
 	text-decoration: none;
+	width: 100%;
   }
 	
 	@media( max-width: 800px ) {
@@ -202,6 +204,7 @@ h1, h2, h3, h4, h5 {
   
   .cta {
 	display: flex;
+	width: 100%;
   }
 
 	@media( max-width: 800px ) {
@@ -233,6 +236,7 @@ h1, h2, h3, h4, h5 {
 			width: 100%;
 			margin-top: 50px;
 			font-size: 72px;
+			padding:0;
 		}
 	}
 
